@@ -107,7 +107,58 @@ button {
     transition: all 300ms ease-in-out;
 }
 
-button:hover{
+button:hover {
     scale: 1.2;
     cursor: pointer;
+}
+
+.drawer_btn {
+    width: 40px;
+    border-radius: 3px;
+    background-color: aliceblue;
+    display: none;
+}
+
+.drawer{
+    height: 100vh;
+    width: 30%;
+    background-color: rgb(58, 58, 58);
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.back{
+    width: 40px;
+}
+.drawer .logo{
+    margin: 0 auto;
+}
+.drawer .tabs{
+    margin: 0 auto;
+}
+@media only screen and (max-width: 1400px) {
+    .tabs {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .inilineTexts {
+        display: none;
+    }
+    .drawer_btn {
+        width: 40px;
+        border-radius: 3px;
+        background-color: aliceblue;
+        display: block;
+    }
 }
